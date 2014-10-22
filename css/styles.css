@@ -3,9 +3,14 @@
 =====================*/
 
 body {
-	font-size: 1.6em;
+	font-size: 1.7em;
 }
-
+a {
+	color: #660066;
+}
+a:hover {
+	color: #480048;
+}
 /* Nav
 =====================*/
 
@@ -49,6 +54,7 @@ body {
 
 .jumbotron {
 	background-color: #fff;
+	padding-top: 10px;
 }
 .carousel-control.right, 
 .carousel-control.left {
@@ -70,6 +76,16 @@ body {
 .carousel-indicators li {
 	border-color: #222;
 }
+.calligraphy {
+	background: url('../img/bg-bg.png') no-repeat 10.5em 2em;
+}
+.wisdom {
+	background: url('../img/bg-ro.png') no-repeat 10.5em 2em;
+}
+.zen {
+	background: url('../img/bg-brg.png') no-repeat 10.5em 2em;
+}
+
 /*.item {
 	margin-top: 40px;
 }*/
@@ -79,6 +95,13 @@ body {
 
 .logo {
 	margin-bottom: 10px;
+	text-align: center;
+}
+.logo h3 {
+	display: inline;
+}
+.logo h3:first-child {
+	color: #660066;
 }
 .carousel-inner .item .head-icon {
 	text-align: center;
@@ -92,7 +115,7 @@ body {
 =====================*/
 
 .index-content {
-	background-color: tomato;
+	background-color: #b69dff;
 	-webkit-transform: skewY(8deg);
   	-moz-transform: skewY(8deg);
   	-ms-transform: skewY(8deg);
@@ -105,10 +128,10 @@ body {
   	-ms-transform: skewY(-8deg);
   	-o-transform: skewY(-8deg);
   	transform: skewY(-8deg); 
-  	padding: 80px 0;
+  	padding: 70px 0;
 }
 .index-content2 {
-	background-color: #3667ff;
+	background-color: #d3ffea;
 	-webkit-transform: skewY(8deg);
   	-moz-transform: skewY(8deg);
   	-ms-transform: skewY(8deg);
@@ -121,13 +144,107 @@ body {
   	-ms-transform: skewY(-8deg);
   	-o-transform: skewY(-8deg);
   	transform: skewY(-8deg); 
-  	padding: 80px 0;
+  	padding: 70px 0;
 }
+.index-content3 {
+	background-color: #b2efff;
+	-webkit-transform: skewY(8deg);
+  	-moz-transform: skewY(8deg);
+  	-ms-transform: skewY(8deg);
+  	-o-transform: skewY(8deg);
+  	transform: skewY(8deg); 
+}
+.index-content3 > .container {
+	-webkit-transform: skewY(-8deg);
+  	-moz-transform: skewY(-8deg);
+  	-ms-transform: skewY(-8deg);
+  	-o-transform: skewY(-8deg);
+  	transform: skewY(-8deg); 
+  	padding: 70px 0;
+}
+
+/* Footer
+=====================*/
+
+input[type="text"],
+input[type="email"] {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 75%;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 15px;
+}
+form > .btn-success {
+	width: 75%;
+	height: 45px;
+	background-color: #8add6d;
+	background-image: -webkit-linear-gradient(top, #8add6d 0%, #60b044 100%);
+	background-image: -moz-linear-gradient(top, #8add6d 0%, #60b044 100%);
+	background-repeat: repeat-x;
+	border-color: #5ca941;
+}
+form > .btn-success:hover {
+	background-image: -webkit-linear-gradient(top, #60b044 0%, #8add6d 100%);
+	background-image: -moz-linear-gradient(top, #60b044 0%, #8add6d 100%);
+}
+img[src="img/hanko.png"] {
+	position: relative;
+	bottom: -5.6em;
+	left: -5em;
+}
+footer ul, footer ul li {
+	list-style-type: none;
+	font-style: italic;
+}
+.social, .social > li {
+	list-style-type: none;
+	padding-left: 0;
+	font-style: normal;
+	font-size: 1.5em;
+	display: inline-block;
+}
+.social > li {
+	margin-left: 15px;
+}
+.social > li:first-child {
+	margin-left: 0;
+}
+.fa-facebook-square {
+	color: #4b87e0;
+}
+.fa-github,
+.fa-angellist {
+	color: black;
+}
+.fa-twitter {
+	color: #78cfe0;
+}
+.fa-dribbble {
+	color: #ff94a8;
+}
+.fa-facebook-square:hover,
+.fa-github:hover,
+.fa-angellist:hover,
+.fa-twitter:hover,
+.fa-dribbble:hover, {
+	color: #660066;
+}
+.legal {
+	font-size: .8em;
+}
+
 
 /* Media Queries 
 =====================*/
 
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
 	/* Nav
 	=====================*/
 	.nav-justified li a {
@@ -142,5 +259,47 @@ body {
 	.nav-justified li:last-child a {
 		border-right: 0;
 		border-radius: 0 5px 5px 0;
+	}
+	/* Footer
+	=====================*/
+	.social, .social > li {
+		font-size: 1.6;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	/* Content
+	=====================*/
+	.index-content img,
+	.index-content2 img,
+	.index-content3 img {
+		margin-top: 60px;
+	}
+		/* Sliding Jumbotron
+	=====================*/
+	.calligraphy {
+	background: url('../img/bg-bg.png') no-repeat 5em 2em;
+	}
+	.wisdom {
+		background: url('../img/bg-ro.png') no-repeat 5em 2em;
+	}
+	.zen {
+		background: url('../img/bg-brg.png') no-repeat 5em 2em;
+	}
+}
+
+}
+
+@media only screen and (max-width: 1199px) {
+	.social,
+	.social > li {
+		font-size: 1.1em;
+	}
+}
+
+@media only screen and (max-width: 991px) {
+	.social,
+	.social > li {
+		font-size: 1em;
 	}
 }
